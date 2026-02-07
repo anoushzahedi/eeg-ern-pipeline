@@ -1,0 +1,27 @@
+[project]
+name = "eeg_ern_pipeline"
+version = "1.1.0"
+description = "A pipeline for processing EEG data using MNE and BIDS"
+readme = "README.md"
+requires-python = ">=3.9"
+authors = [
+    {name = "Anoushiravan Zahedi", email = "anoushiravanzahedi@gmail.com"}
+]
+dependencies = [
+    "mne",
+    "mne-bids",
+    "autoreject",
+    "pandas",
+    "numpy",
+    "scipy",
+    "matplotlib",
+    "seaborn",
+    "python-picard"
+]
+
+[project.scripts]
+eeg_ern_pipe = "eeg_ern_pipeline.run_pipeline:main"
+
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
