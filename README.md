@@ -110,14 +110,17 @@ eeg-ern-pipeline/
 │   ├── run_pipeline.py        # CLI Logic
 │   ├── utils.py               # Shared utilities
 │   ├── preprocessing/         # Preprocessing Sub-package
+│   │   ├── __init__.py        # sub-package exports
 │   │   ├── preprocessing.py   # Logic
 │   │   └── main_preprocess.py # Runner
 │   ├── epoching/              # Epoching Sub-package
-│   │   ├── epoching.py
-│   │   └── main_epoch.py
+│   │   ├── __init__.py        # sub-package exports
+│   │   ├── epoching.py        # Logic
+│   │   └── main_epoch.py      # Runner
 │   └── ern/                   # ERN Sub-package
-│       ├── ern_analysis.py
-│       └── main_ern.py
+│   │   ├── __init__.py        # sub-package exports
+│       ├── ern_analysis.py    # Logic
+│       └── main_ern.py        # Runner
 ```
 
 ## Output Structure
